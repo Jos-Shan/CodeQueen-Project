@@ -229,7 +229,7 @@
     $('.submitBtn').click( async (e)=>{
         e.preventDefault();
         
-        if(firstNameInput.val()=== '' || lastNameInput.val()=== '' || emailInput.val()==='' || ageInput.val() === ''){
+        if( emailInput.val()==='' || firstNameInput.val()=== '' || lastNameInput.val()=== '' || phoneNumberInput.val()==='' || ageInput.val() === ''){
             alert("Fill out all fields");
         } else {
             const studentItem = (
