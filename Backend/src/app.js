@@ -1,13 +1,18 @@
-//import express
-let express = require('express');
-let cors = require('cors');
-let bodyParser = require('body-parser');
-let mongoose = require('mongoose');
-let studentroutes = require('./routes/studentroutes');
 
-//start app
-let app = express();
-//assign port 
+const express = require('express');
+
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+let studentroutes = require('./routes/studentroutes');
+const app = express();
+
+app.get('/person', function(req, res){
+    res.render('person');
+});
+
+app.set('view engine', 'html');
+app.set('views', './Frontend/Josephine');
+
 var port = process.env.PORT || 8081;
 
 //connect to mongoose
@@ -26,19 +31,19 @@ mongo.then(()=>{
     console.log(error, 'error');
 });
 
-//configure bodyparser to handle the post requests
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(cors());
+
 
 //use API routes in the app
 app.use('/students', studentroutes);
 
+app.post('/', function(req, res){
+    console.log(req.body);
+    res.send("received your application");
+});
 
-
-//launch app to the specified port
 
 app.listen(port, function(){
     console.log("app is running on port "  +port)

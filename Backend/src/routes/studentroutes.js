@@ -1,5 +1,6 @@
-//intitialize express router
-let router = require('express').Router();
+const express = require('express');
+
+const router = express.Router();
 
 //import controllers
 let { createStudent, fetchAllStudents, deleteStudent, updateStudent } = require("../controllers/studentcontrollers");

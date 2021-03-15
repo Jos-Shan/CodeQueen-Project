@@ -1,7 +1,7 @@
-//importing the mentor model
-let Student = require('../models/studentmodels');
+const express = require('express');
+const Student = require('../models/studentmodels');
 
-//create a new mentor in database
+
 const createStudent = async (req, res) =>{
     const { body } = req;
     const student = new Student(body);
@@ -9,13 +9,13 @@ const createStudent = async (req, res) =>{
     return res.status(201).send(student)
 };
 
-//fetch all mentors
+
 const fetchAllStudents = async(req, res) =>{
     let students = await Student.find({})
     return res.status(200).send(students);
 };
 
-//delete student from database
+
 const deleteStudent = async(req, res) =>{
     const { id } = req.params;
     const student = await Student.findById(id);

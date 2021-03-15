@@ -1,4 +1,4 @@
-let mongoose = require('mongoose');
+const mongoose = require('mongoose');
 let validator = require('validator');
 
 const StudentSchema = mongoose.Schema({
@@ -101,7 +101,9 @@ const StudentSchema = mongoose.Schema({
 
 });
 
-var Student = module.exports = mongoose.model("Student", StudentSchema);
+
+const Student = module.exports = mongoose.model("Student", StudentSchema);
+
 
 // module.exports.get = function(callback, limit){
 //     Student.find(callback).limit(limit);
