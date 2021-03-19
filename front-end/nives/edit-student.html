@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Admin | All Students</title>
+    <title>Admin | Edit Student</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
@@ -79,28 +79,68 @@
                 </div>
             </nav>
             <div class="content-wrapper">
-                <h2>STUDENT INFORMATION</h2>
-                <div class="search-filter">  
-                    <label for="cars">Filter your search:</label>
-                    <select name="cars" id="cars">
-                        <option value="volvo">Select Option</option>
-                        <option value="volvo">Cohort 1</option>
-                        <option value="saab">Cohort 2</option>
-                        <option value="opel">Cohort 3</option>
-                        <option value="audi">Cohort 4</option>
-                        <option value="audi">Student</option>
-                        <option value="audi">Alumni</option>
-                    </select>
-                    <input type="submit" value="Submit"> 
-                    
-                </div>
-                <!-- filter which students to display according to cohort, status[student, graduated, alumni] -->
+
                 <div class="container-fluid">
-
-                    <div id='student-table'>
-
-
-                    </div>
+                    <form action="">
+                        <div class="form-group">
+                          <label for="name">Name:</label>
+                          <input type="name" class="form-control" placeholder="Enter name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age:</label>
+                            <input type="age" class="form-control" placeholder="Enter age" id="age">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" placeholder="Enter email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone number:</label>
+                            <input type="number" class="form-control" placeholder="Enter phone number" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of birth:</label>
+                            <input type="text" class="form-control datepicker" placeholder="Select Date" id="dob">
+                        </div>
+                        <div class="form-group">
+                            <label for="cohort">Cohort:</label>
+                            <input type="number" class="form-control" placeholder="Enter Cohort" id="cohort">
+                        </div>
+                        <div class="form-group">
+                            <label for="status">Status:</label>
+                            <select id="status">
+                                <option value="Student">Student</option>
+                                <option value="Alumni">Alumni</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="html-mark">HTML:</label>
+                            <input type="number" class="form-control" placeholder="Enter Marks" id="html-mark">
+                        </div>
+                        <div class="form-group">
+                            <label for="css-mark">CSS:</label>
+                            <input type="number" class="form-control" placeholder="Enter Marks" id="css-mark">
+                        </div>
+                        <div class="form-group">
+                            <label for="js-mark">JavaScript:</label>
+                            <input type="number" class="form-control" placeholder="Enter Marks" id="js-mark">
+                        </div>
+                        <div class="form-group">
+                            <label for="rating">Rate Student:</label>
+                            <select id="rating">
+                                <option value="Excellent">Excellent</option>
+                                <option value="Above Average">Above Average</option>
+                                <option value="Below Average">Below Average</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-dashboard btn-danger">Submit</button>
+                        <button type="submit" class="btn btn-dashboard btn-primary">Exit</button>
+                      </form> 
                     <div class="line"></div>
                 </div>
             </div>

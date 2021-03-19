@@ -4,14 +4,20 @@
     <title>Admin | Dashboard</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style-admin.css">
     <script src="https://kit.fontawesome.com/907e9d102e.js" crossorigin="anonymous"></script>
-    <script src="./jquery-3.5.1.min.js"></script>
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <script src="main.js"></script>
+    <!-- <script src="https://d3js.org/d3.v6.min.js"></script> -->
+
+    <script src="./js/d3.min.js"></script>
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    
+    <link rel="stylesheet" href="./css/d3style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -20,27 +26,27 @@
                 <li> <a href="dashboard.html"> <i class="fas fa-home"></i> Dashboard</a> </li>
                 <li> <a href="#studentSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-user-friends"></i> Students</a>
                     <ul class="collapse list-unstyled" id="studentSubmenu">
-                        <li> <a href="#">Register Students</a> </li>
-                        <li> <a href="#">All Students</a> </li>
+                        <!-- <li> <a href="register-student.html">Students</a> </li> -->
+                        <li> <a href="all-students.html">All Students</a> </li>
                     </ul>
                 </li>
                
                 <li> <a href="#userSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-users"></i> Manage Users</a>
                     <ul class="collapse list-unstyled" id="userSubmenu">
-                        <li> <a href="#">Register user</a> </li>
-                        <li> <a href="#">View all users</a> </li>
+                        <li> <a href="register-user.html">Register user</a> </li>
+                        
                     </ul>
                 </li>
                 <li> <a href="#jobSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-book"></i> Job Board</a>
                     <ul class="collapse list-unstyled" id="jobSubmenu">
-                        <li> <a href="#">Post a job</a> </li>
-                        <li> <a href="#">View all jobs</a> </li>
+                        <li> <a href="post-job.html">Post a job</a> </li>
+                        <li> <a href="all-jobs.html">View all jobs</a> </li>
                     </ul>
                 </li>
                 <li> <a href="#mentorSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-user-friends"></i> Mentors</a>
                     <ul class="collapse list-unstyled" id="mentorSubmenu">
-                        <li> <a href="#">Register a mentor</a> </li>
-                        <li> <a href="#">View all mentors</a> </li>
+                        <li> <a href="register-mentor.html">Register a mentor</a> </li>
+                        
                     </ul>
                 </li>
             </ul>
@@ -73,50 +79,21 @@
                 </div>
             </nav>
             <div class="content-wrapper">
-                <div class="container-fluid dashboard-section">
-                    <h2 class="text-center">WELCOME TO YOUR DASHBOARD</h2>
-                    <table class="graph container">
-                        <caption>Graduation rate (students) per cohort</caption>
-                        <thead>
-                        <tr>
-                            <th scope="col">Item</th>
-                            <th scope="col">Percent</th>
-                        </tr>
-                        </thead><tbody>
-                        <tr style="height:85%">
-                            <th scope="row">Cohort-1</th>
-                            <td><span>85%</span></td>
-                        </tr>
-                        <tr style="height:23%">
-                            <th scope="row">Cohort-2</th>
-                            <td><span>23%</span></td>
-                        </tr>
-                        <tr style="height:7%">
-                            <th scope="row">Cohort-3</th>
-                            <td><span>7%</span></td>
-                        </tr>
-                        <tr style="height:38%">
-                            <th scope="row">Cohort-4</th>
-                            <td><span>38%</span></td>
-                        </tr>
-                        <tr style="height:35%">
-                            <th scope="row">Cohort-5</th>
-                            <td><span>35%</span></td>
-                        </tr>
-                        <tr style="height:30%">
-                            <th scope="row">Cohort-6</th>
-                            <td><span>30%</span></td>
-                        </tr>
-                        <tr style="height:5%">
-                            <th scope="row">Cohort-7</th>
-                            <td><span>5%</span></td>
-                        </tr>
-                        <tr style="height:20%">
-                            <th scope="row">Cohort-8</th>
-                            <td><span>20%</span></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <h2 class="text-center">WELCOME TO YOUR DASHBOARD</h2>
+                <div class="container-fluid">
+                   
+                        <div id='layout'>
+
+                            <div id='container'>
+
+                            <svg></svg>
+
+                            </div>
+                        </div>
+                        <div class="table">
+
+                        </div>
+                    
                     <div class="line"></div>
                 </div>
             </div>
@@ -128,5 +105,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="./js/myd3.js"></script>
 </body>
 </html>
