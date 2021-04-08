@@ -174,18 +174,18 @@ const sample = [
 //dummie data
 
 var data = [
-  { "Name" : 'Nalumansi Margret', "age" : 22, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": 'student', "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" ", "edit":"icon" },
-  { "Name" : 'Mirembe Daniella', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student",  "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" ", "edit":"icon" },
-  { "Name" : 'Kisaakye Danae', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student",  "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" ", "edit":"icon" },
-  { "Name" : 'Nakasi sarah Mercy', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" ", "edit":"icon" },
-  { "Name" : 'Nalumansi Florence', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" ", "edit":"icon" },
-  { "Name" : 'Nabwami Patricia', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" ", "edit":"icon" },
-  { "Name" : 'Nakyejwe Christine', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" ","edit":"icon" },
-  { "Name" : 'Nabwanika Aisha', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" ", "edit":"icon" },
-  { "Name" : 'Namutebi Daphne', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" ","edit":"icon" },
-  { "Name" : 'Mbabazzi Doris Cynthia', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" ","edit":"icon" },
-  { "Name" : 'Nalubega Geraldine', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student",  "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" ","edit":"icon" },
-  { "Name" : 'Nalubega Christine', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" ","edit":"icon" },
+  { "Name" : 'Nalumansi Margret', "age" : 22, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": 'student', "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" "},
+  { "Name" : 'Mirembe Daniella', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student",  "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" "},
+  { "Name" : 'Kisaakye Danae', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student",  "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" "},
+  { "Name" : 'Nakasi sarah Mercy', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" "},
+  { "Name" : 'Nalumansi Florence', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" "},
+  { "Name" : 'Nabwami Patricia', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" "},
+  { "Name" : 'Nakyejwe Christine', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" "},
+  { "Name" : 'Nabwanika Aisha', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" "},
+  { "Name" : 'Namutebi Daphne', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" "},
+  { "Name" : 'Mbabazzi Doris Cynthia', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" "},
+  { "Name" : 'Nalubega Geraldine', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student",  "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" "},
+  { "Name" : 'Nalubega Christine', "age" : 33, "email": "nmargeret@gmail.com", "Phone": "0700326481", "Date of birth": "26/04/1982", "Cohort": 2, "Status": "student", "HTML": " ", "CSS": " ", "JavaScript": " ", "Facilitator Rating":" "},
 ]
 		
 function tabulate(data, columns) {
@@ -193,12 +193,27 @@ function tabulate(data, columns) {
 	var thead = table.append('thead')
 	var	tbody = table.append('tbody');
 
+  
 	// append the header row
 	thead.append('tr')
 	  .selectAll('th')
 	  .data(columns).enter()
 	  .append('th')
 	    .text(function (column) { return column; });
+
+// button
+// thead.append('th').text('action')
+// trows.selectAll('td')
+//   .data(function(d){
+//     return[d];
+//   })
+//   .enter()
+//   .append('td')
+//   .attr('class', 'button-delete')
+//   .append('button-delete')
+//   .text(function(d){return 'do something'})
+//   .on('click', function(d){console.log(d); alert('hello')}); //listener
+
 
 	// create a row for each object in the data
 	var rows = tbody.selectAll('tr')
@@ -222,5 +237,5 @@ function tabulate(data, columns) {
 
 // render the tables
 // tabulate(data, ['Name', 'age', 'Cohort', 'Status', 'edit']); // 2 column table
-tabulate(data, [ "Name", "age", "email", "Phone", "Date of birth", "Cohort", "Status", "HTML", "CSS", "JavaScript", "Facilitator Rating", "edit"]); // table with only date column
+tabulate(data, [ "Name", "age", "email", "Phone", "Date of birth", "Cohort", "Status", "HTML", "CSS", "JavaScript", "Facilitator Rating"]); // table with only date column
 // tabulate(data, ['close']); // table with only close column
