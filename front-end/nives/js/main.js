@@ -7,24 +7,28 @@ $(function(){
     });
 
     //managing user registration code
-    let users =[{
-        id: 1,
-        Name: "Kamatsiko Brenda",
-        Sex: 'Female',
-        Email: 'jah@gmail.com',
-        PhoneNumber: 789056643,
-        Role: 'Facilitator',
-    }]
+    let users =[
+    //     {
+    //     id: 1,
+    //     Name: "Kamatsiko Brenda",
+    //     Sex: 'Female',
+    //     Email: 'jah@gmail.com',
+    //     PhoneNumber: 789056643,
+    //     Role: 'Facilitator',
+    // }
+]
     
     // Delete user by id
     const deleteUser = (id) => {
-        const userIndex = users.findIndex((user) => user.id === id)
+        const UserIndex = users.findIndex((user) => user.id === id)
+        // renderUserDOM(newUsers)
 
         if (userIndex > -1) {
             users.splice(userIndex, 1)
         }else{
             alert('failed to delete user')
         }
+        renderUserDOM(users)
     }
 
     let renderUserDOM = (user)=>{
